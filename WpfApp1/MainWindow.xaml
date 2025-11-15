@@ -7,6 +7,77 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <!-- 방 목록 -->
+            <ColumnDefinition Width="*"/>
+            <!-- 채팅 -->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- 상태/컨트롤 -->
+            <RowDefinition Height="*"/>
+            <!-- 본문 -->
+            <RowDefinition Height="Auto"/>
+            <!-- 입력 -->
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Margin="1,0,5,2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <!-- 버튼 -->
+                <ColumnDefinition Width="*"/>
+                <!-- 닉네임-->
+            </Grid.ColumnDefinitions>
+            <Button Content="방 새로고침"
+                    Command="{Binding  ReloadRoomCommand}"
+                    Margin="0,0,10,0"/>
+            <TextBlock Text="{Binding  UserName,StringFormat=닉네임: {0}}" Grid.Column="1" Margin="5,0,0,0" 
+                                    VerticalAlignment="Center"/>
+        </Grid>
+        <Grid  Grid.Column="1"  Margin="1,0,5,2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!-- 방이름 -->
+                <ColumnDefinition Width="*"/>
+                <!-- 싱태 -->
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding SelectRoom,StringFormat=현재 방: {0}}" Margin="5,0,0,0" 
+            VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Status, StringFormat=현재 상태: {0}}"   Grid.Column="1" Margin="0,0,0,0" 
+  VerticalAlignment="Center"/>
+        </Grid>
+        <!-- 왼쪽: 방 목록 (방 개수만큼 버튼) -->
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Margin="0,0,10,0">
+            <ItemsControl ItemsSource="{Binding RoomNames}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}"
+                                Margin="0,0,0,5"
+                                Command="{Binding DataContext.Joincommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                CommandParameter="{Binding}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <ListBox Grid.Row="1" Grid.Column="1"
+                 ItemsSource="{Binding Messages}"
+                 Margin="0,0,0,5"/>
+
+        <!-- 메시지 입력 -->
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Width="500"
+                     Text="{Binding InputMessage, UpdateSourceTrigger=PropertyChanged}"
+                     Margin="0,0,5,0"/>
+                <Button Content="Send"
+                    Command="{Binding   SendMessageCommand }"/>
+            </StackPanel>
+            <Button Content="LEAVE" Grid.Column="1"  Margin="5,0,1,0" 
+     Command="{Binding Leavecommand}"/>
+        </Grid>
     </Grid>
 </Window>

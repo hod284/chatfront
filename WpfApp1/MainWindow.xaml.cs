@@ -20,9 +20,17 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private  mainview _vm;
         public MainWindow()
         {
             InitializeComponent();
+            _vm = new mainview();
+            DataContext = _vm;
+
+            Loaded += async (_, __) =>
+            {
+                await _vm.InitializeAsync(); // 🔥 웹소켓 먼저 연결 → 방 목록 GET
+            };
         }
     }
 }

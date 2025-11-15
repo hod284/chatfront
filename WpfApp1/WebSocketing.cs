@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.WebSockets;
 using System.Reflection.Emit;
@@ -20,7 +21,12 @@ namespace WpfApp1
         public Action<string> Message;
 
 
-        public bool IsConnected => WebSocket != null && WebSocket.State == WebSocketState.Open; 
+        private bool IsConnected => WebSocket != null && WebSocket.State == WebSocketState.Open;
+
+        public bool GetConnected
+        {
+            get => IsConnected; 
+        }
 
 
         public async Task ConnectedAsync(string uri)
@@ -36,7 +42,10 @@ namespace WpfApp1
             }
             catch (Exception ex) 
             {
-                Error.Invoke(ex.Message);
+                if(ex.Message== null)
+                    Error.Invoke("서버 없음");
+                else
+                            Error.Invoke(ex.Message);
             }
         }
         public async Task SendtheMessageAsync(string msg)
