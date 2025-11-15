@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\j\Documents\GitHub\chatfront\WpfApp1\obj\Debug\
+C:\Users\j\Documents\GitHub\chatfront\WpfApp1\obj\Release\
 WpfApp1
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\j\Documents\GitHub\chatfront\WpfApp1\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ C:\Users\j\Documents\GitHub\chatfront\WpfApp1\App.xaml
 25-23644901
 MainWindow.xaml;
 
-False
+True
 

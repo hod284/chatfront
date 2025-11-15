@@ -187,7 +187,7 @@ namespace WpfApp1
             Message.Clear();
             var playload = new
             {
-                type = "chat",
+                type = "join",
                 roomid = SelectRoom,
                 Sender = UserName,
                 content = ""

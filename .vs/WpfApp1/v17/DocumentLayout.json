@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\\uBC31\uC5C5\\chatfront\\",
+  "WorkspaceRootPath": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|e:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|c:\\users\\j\\documents\\github\\chatfront\\wpfapp1\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|E:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\websocketing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\websocketing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|E:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\irelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\irelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|E:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\resfullapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\resfullapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\resfullapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|E:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\websocketing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\websocketing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\irelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\irelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|e:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|e:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|e:\\\uBC31\uC5C5\\chatfront\\wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|C:\\Users\\j\\Documents\\GitHub\\chatfront\\wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AB5E646C-DA28-4D61-838F-80A91A80DF23}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -48,60 +48,57 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T07:38:45.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T07:38:45.225Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "App.xaml",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\App.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\App.xaml",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\App.xaml",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\App.xaml",
               "RelativeToolTip": "WpfApp1\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T07:31:43.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T07:31:43.198Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "packages.config",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\packages.config",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\packages.config",
               "RelativeDocumentMoniker": "WpfApp1\\packages.config",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\packages.config",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\packages.config",
               "RelativeToolTip": "WpfApp1\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-15T07:31:37.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T07:31:37.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ResfullApi.cs",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\ResfullApi.cs",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\ResfullApi.cs",
               "RelativeDocumentMoniker": "WpfApp1\\ResfullApi.cs",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\ResfullApi.cs",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\ResfullApi.cs",
               "RelativeToolTip": "WpfApp1\\ResfullApi.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswBcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T03:03:19.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IRelayCommand.cs",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\IRelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\IRelayCommand.cs",
               "RelativeDocumentMoniker": "WpfApp1\\IRelayCommand.cs",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\IRelayCommand.cs",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\IRelayCommand.cs",
               "RelativeToolTip": "WpfApp1\\IRelayCommand.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,24 +109,24 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "mainview.cs",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\mainview.cs",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\mainview.cs",
               "RelativeDocumentMoniker": "WpfApp1\\mainview.cs",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\mainview.cs",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\mainview.cs",
               "RelativeToolTip": "WpfApp1\\mainview.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAuwMYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwv70AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T01:24:35.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WebSocketing.cs",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\WebSocketing.cs",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\WebSocketing.cs",
               "RelativeDocumentMoniker": "WpfApp1\\WebSocketing.cs",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\WebSocketing.cs",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\WebSocketing.cs",
               "RelativeToolTip": "WpfApp1\\WebSocketing.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBkAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAA1wBkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T01:24:34.383Z",
               "EditorCaption": ""
@@ -138,13 +135,12 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
-              "ToolTip": "E:\\\uBC31\uC5C5\\chatfront\\WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\j\\Documents\\GitHub\\chatfront\\WpfApp1\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T01:24:32.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T01:24:32.105Z"
             }
           ]
         }
