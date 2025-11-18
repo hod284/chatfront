@@ -216,7 +216,6 @@ public class WebsocketManager : MonoBehaviour
             Debug.LogWarning("현재 참가 중인 방이 없음 (먼저 Create 또는 Join 호출 필요)");
             return;
         }
-
         var dto = new ChatDto
         {
             type = "Chat",         // ★ "Chat"
@@ -224,7 +223,7 @@ public class WebsocketManager : MonoBehaviour
             sender = userName,
             content = text
         };
-
+        MessageFiled.text ="";
         await SendAsync(dto);
     }
 
