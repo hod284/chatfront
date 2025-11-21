@@ -35,12 +35,12 @@ public class WebsocketManager : MonoBehaviour
     public string serverUrl = "ws://localhost:8080/chat";
     public string roomsApiUrl = "http://localhost:8080/api/rooms";
     private WebSocket ws;
-    private string userName = "UnityUser";   // À¯´ÏÆ¼ Å¬¶óÀÌ¾ğÆ® ÀÌ¸§
+    private string userName = "UnityUser";   // ìœ ë‹ˆí‹° í´ë¼ì´ì–¸íŠ¸ ì´ë¦„
     private string currentRoomId =string.Empty;
     [Serializable]
     public class ChatDto
     {
-        public string type;    // "Create", "Join", "Chat", "Leave", "CreateAck", "system", "error" µî
+        public string type;    // "Create", "Join", "Chat", "Leave", "CreateAck", "system", "error" ë“±
         public string roomId;
         public string sender;
         public string content;
@@ -120,13 +120,13 @@ public class WebsocketManager : MonoBehaviour
     }
     private void HandleIncomingMessage(ChatDto msg)
     {
-        // ¼­¹ö WebsocketHandler¿¡¼­ º¸³»´Â typeµé:
-        // "CreateAck", "system", "Chat", "Leave", "error" µî
+        // ì„œë²„ WebsocketHandlerì—ì„œ ë³´ë‚´ëŠ” typeë“¤:
+        // "CreateAck", "system", "Chat", "Leave", "error" ë“±
       
         switch (msg.type)
         {
             case "Create":
-                Debug.Log($"[¼­¹ö] ¹æ »ı¼º È®ÀÎ: {msg.roomId}");
+                Debug.Log($"[ì„œë²„] ë°© ìƒì„± í™•ì¸: {msg.roomId}");
                 LoadRoomsAsync();
                 break;
 
@@ -140,9 +140,12 @@ public class WebsocketManager : MonoBehaviour
 
             case "Leave":
                 handleMessage($"{msg.roomId}]: {msg.content}");
-                for(int i = 1; i < Messageparent.transform.childCount; i++)
-        {
-                    Destroy(Messageparent.transform.GetChild(i).gameObject);
+                if(msg.sender == userName)
+                {
+                    for(int i = 1; i < Messageparent.transform.childCount; i++)
+                    {
+                       Destroy(Messageparent.transform.GetChild(i).gameObject);
+                    }
                 }
                 break;
 
@@ -156,22 +159,22 @@ public class WebsocketManager : MonoBehaviour
         }
     }
 
-    // ========== °øÅë Àü¼Û ÇÔ¼ö ==========
+    // ========== ê³µí†µ ì „ì†¡ í•¨ìˆ˜ ==========
 
     private async Task SendAsync(ChatDto dto)
     {
         if (ws == null || ws.State != WebSocketState.Open)
         {
-            Debug.LogWarning("À¥¼ÒÄÏÀÌ ¿­·Á ÀÖÁö ¾Ê¾Æ¼­ ¸Ş½ÃÁö¸¦ º¸³¾ ¼ö ¾øÀ½");
+            Debug.LogWarning("ì›¹ì†Œì¼“ì´ ì—´ë ¤ ìˆì§€ ì•Šì•„ì„œ ë©”ì‹œì§€ë¥¼ ë³´ë‚¼ ìˆ˜ ì—†ìŒ");
             return;
         }
 
         string json = JsonUtility.ToJson(dto);
-        Debug.Log("º¸³»´Â JSON: " + json);
+        Debug.Log("ë³´ë‚´ëŠ” JSON: " + json);
         await ws.SendText(json);
     }
 
-    // ========== ¹æ »ı¼º ==========
+    // ========== ë°© ìƒì„± ==========
 
     public async void CreateRoom(string roomId)
     {
@@ -181,7 +184,7 @@ public class WebsocketManager : MonoBehaviour
 
         var dto = new ChatDto
         {
-            type = "Create",       // ¡Ú ¼­¹ö switch-case¶û ´ë¼Ò¹®ÀÚ Á¤È®È÷ ¸ÂÃã
+            type = "Create",       // â˜… ì„œë²„ switch-caseë‘ ëŒ€ì†Œë¬¸ì ì •í™•íˆ ë§ì¶¤
             roomId = roomId,
             sender = userName,
             content = ""
@@ -190,7 +193,7 @@ public class WebsocketManager : MonoBehaviour
         await SendAsync(dto);
     }
 
-    // ========== ¹æ Âü°¡ ==========
+    // ========== ë°© ì°¸ê°€ ==========
 
     public async void JoinRoom(string roomId)
     {
@@ -198,7 +201,7 @@ public class WebsocketManager : MonoBehaviour
 
         var dto = new ChatDto
         {
-            type = "Join",         // ¡Ú "Join"
+            type = "Join",         // â˜… "Join"
             roomId = roomId,
             sender = userName,
             content = ""
@@ -207,18 +210,18 @@ public class WebsocketManager : MonoBehaviour
         await SendAsync(dto);
     }
 
-    // ========== Ã¤ÆÃ º¸³»±â ==========
+    // ========== ì±„íŒ… ë³´ë‚´ê¸° ==========
 
     public async void SendChat(string text)
     {
         if (string.IsNullOrWhiteSpace(currentRoomId))
         {
-            Debug.LogWarning("ÇöÀç Âü°¡ ÁßÀÎ ¹æÀÌ ¾øÀ½ (¸ÕÀú Create ¶Ç´Â Join È£Ãâ ÇÊ¿ä)");
+            Debug.LogWarning("í˜„ì¬ ì°¸ê°€ ì¤‘ì¸ ë°©ì´ ì—†ìŒ (ë¨¼ì € Create ë˜ëŠ” Join í˜¸ì¶œ í•„ìš”)");
             return;
         }
         var dto = new ChatDto
         {
-            type = "Chat",         // ¡Ú "Chat"
+            type = "Chat",         // â˜… "Chat"
             roomId = currentRoomId,
             sender = userName,
             content = text
@@ -227,19 +230,19 @@ public class WebsocketManager : MonoBehaviour
         await SendAsync(dto);
     }
 
-    // ========== ¹æ ³ª°¡±â ==========
+    // ========== ë°© ë‚˜ê°€ê¸° ==========
 
     public async void LeaveRoom()
     {
         if (string.IsNullOrWhiteSpace(currentRoomId))
         {
-            Debug.LogWarning("³ª°¥ ¹æÀÌ ¾øÀ½ (currentRoomId ºñ¾î ÀÖÀ½)");
+            Debug.LogWarning("ë‚˜ê°ˆ ë°©ì´ ì—†ìŒ (currentRoomId ë¹„ì–´ ìˆìŒ)");
             return;
         }
 
         var dto = new ChatDto
         {
-            type = "Leave",        // ¡Ú "Leave"
+            type = "Leave",        // â˜… "Leave"
             roomId = currentRoomId,
             sender = userName,
             content = ""
@@ -250,7 +253,7 @@ public class WebsocketManager : MonoBehaviour
         RoomName.text  =currentRoomId = "";
     }
 
-    // ========== Á¾·á ½Ã Á¤¸® ==========
+    // ========== ì¢…ë£Œ ì‹œ ì •ë¦¬ ==========
 
     async void OnApplicationQuit()
     {
@@ -271,9 +274,9 @@ public class WebsocketManager : MonoBehaviour
      
 
             string rawJson = uwr.downloadHandler.text;
-            Debug.Log("¹æ ¸ñ·Ï RAW JSON: " + rawJson); // ¿¹: ["room-1","room-2"]
+            Debug.Log("ë°© ëª©ë¡ RAW JSON: " + rawJson); // ì˜ˆ: ["room-1","room-2"]
 
-            // JsonUtility´Â ¹è¿­À» ¹Ù·Î ¸ø ÀĞ¾î¼­ ÇÑ ¹ø °¨½ÎÁÜ
+            // JsonUtilityëŠ” ë°°ì—´ì„ ë°”ë¡œ ëª» ì½ì–´ì„œ í•œ ë²ˆ ê°ì‹¸ì¤Œ
             string wrapped = "{\"rooms\":" + rawJson + "}";
             var wrapper = JsonUtility.FromJson<StringArrayWrapper>(wrapped);
 
@@ -283,24 +286,24 @@ public class WebsocketManager : MonoBehaviour
 
     private void CreateRoomButtons(string[] rooms)
     {
-        // ±âÁ¸ ¹öÆ°µé Á¦°Å
+        // ê¸°ì¡´ ë²„íŠ¼ë“¤ ì œê±°
         for (int i =1; i< roomButtonParent.transform.childCount; i++)
         {
             Destroy(roomButtonParent.transform.GetChild(i).gameObject);
         }
 
-        // »õ·Î¿î ¹öÆ° »ı¼º
+        // ìƒˆë¡œìš´ ë²„íŠ¼ ìƒì„±
         foreach (var room in rooms)
         {
             var btn = Instantiate(roomButtonPrefab, roomButtonParent.transform);
             btn.GetComponentInChildren<TMP_Text>().text = room;
             btn.gameObject.SetActive(true);
-            string capturedRoom = room; // Å¬·ÎÀú¿ë º¹»ç
+            string capturedRoom = room; // í´ë¡œì €ìš© ë³µì‚¬
 
             btn.onClick.AddListener(() =>
             {
-                Debug.Log("¹æ Å¬¸¯: " + capturedRoom);
-                // ¿©±â¼­ À¥¼ÒÄÏÀ¸·Î Âü°¡
+                Debug.Log("ë°© í´ë¦­: " + capturedRoom);
+                // ì—¬ê¸°ì„œ ì›¹ì†Œì¼“ìœ¼ë¡œ ì°¸ê°€
                 JoinRoom(capturedRoom);
             });
         }
