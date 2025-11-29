@@ -355,15 +355,12 @@ MonoBehaviour:
   RoomNameFiled: {fileID: 1547871628}
   RoomName: {fileID: 1584319037}
   State: {fileID: 1177961225}
-  RefreshButton: {fileID: 208756624}
+  RoomState: {fileID: 208756627}
   CrerateButton: {fileID: 1464224338}
   LeaveButton: {fileID: 1368676110}
   Message: {fileID: 52317934}
   Messageparent: {fileID: 370264611}
-  roomButtonPrefab: {fileID: 1686126883}
-  roomButtonParent: {fileID: 1716141051}
   serverUrl: ws://localhost:8080/ws/chat
-  roomsApiUrl: http://localhost:8080/api/Rooms
 --- !u!4 &118871951
 Transform:
   m_ObjectHideFlags: 0
@@ -653,6 +650,7 @@ GameObject:
   - component: {fileID: 208756626}
   - component: {fileID: 208756625}
   - component: {fileID: 208756624}
+  - component: {fileID: 208756627}
   m_Layer: 5
   m_Name: refresh
   m_TagString: Untagged
@@ -762,6 +760,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208756622}
   m_CullTransparentMesh: 1
+--- !u!114 &208756627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208756622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ab334af30b361439858287e0a3ed67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  roomButtonPrefab: {fileID: 1686126883}
+  roomButtonParent: {fileID: 1716141051}
+  roomsApiUrl: http://localhost:8080/api/Rooms
+  RefreshButton: {fileID: 208756624}
+  WSManager: {fileID: 118871950}
 --- !u!1 &223951435
 GameObject:
   m_ObjectHideFlags: 0
